@@ -1,0 +1,32 @@
+# --- Constraints
+constraint.required=Required
+constraint.min=Minimum value: {0}
+constraint.max=Maximum value: {0}
+constraint.minLength=Minimum length: {0}
+constraint.maxLength=Maximum length: {0}
+constraint.email=Email
+
+title=GuildaCode | The Guilda is comming!
+nameEmp=Guilda Code
+weAre=We are
+comingSoon=Coming Soon
+timeLaunce=Time Until Launce
+aboutUs=About Us
+weAre=WE ARE DEDICATED
+subscribe=Subscribe
+ourNews=OUR NEWSLETTER
+email=Email Address
+contact=CONTACT
+getIn=GET IN TOUCH
+firstName=First Name
+lastName=Last Name
+subject=Subject
+message=Message
+days=DAYS
+hours=HOURS
+minutes=MINUTES
+seconds=SECONDS
+home=Home
+about=About
+subscribe=Subscribe
+contact=Contact
