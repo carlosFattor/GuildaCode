@@ -1,6 +1,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC);
 
 body{
 	font-family:'Roboto', sans-serif;
@@ -424,7 +425,7 @@ a:focus{
 .site-title{
 	text-align:center;
 	font-size:66px;
-	font-family:'Pacifico';
+	font-family:'Playfair';
 	margin:0 0 50px 0;
 	padding-bottom:50px;
 	position:relative;

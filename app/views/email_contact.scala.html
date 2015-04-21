@@ -1,0 +1,34 @@
+@(msg: String, contact: models.Contact) @import helper._
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>@msg</title>
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
+</head>
+<body>
+	<h2>Email de Contato | GuildaCode</h2>
+	<table style="width:100%">
+	  <tr>
+	    <th colspan="2">Nome</th>
+	    <th colspan="3">Contato</th>
+	  </tr>
+	  <tr>
+	    <td>@contact.getNome()</td>
+	    <td>@contact.getSobreNome()</td>
+	    <td>@contact.getEmail()</td>
+	    <td>@contact.getAssunto()</td>
+	    <td>@contact.getMensagem()</td>
+	  </tr>
+	</table>
+</body>
+</html>

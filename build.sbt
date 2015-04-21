@@ -10,5 +10,7 @@ libraryDependencies ++= Seq(
   javaJdbc,
   javaEbean,
   cache,
-  javaWs
+  javaWs,
+  "javax.mail" % "mail" % "1.4.1",
+  "com.typesafe.play" %% "play-mailer" % "2.4.0"
 )

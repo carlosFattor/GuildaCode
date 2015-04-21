@@ -114,25 +114,19 @@ jQuery(document).ready(function($) {
             return false;
         }
 
-        var data_string = $('.news-letter').serialize();
-
         $('#subscribe-submit').hide();
         $('#subscribe-loading').fadeIn();
         $('.subscribe-error').fadeOut();
 
-        $.ajax({
-            type: "POST",
-            url: "php/subscribe.php",
-            data: data_string,
-
+        myJsRoutes.controllers.Application.subscribe(emailVal).ajax({
             //success
             success: function (data) {
                 $('.subscribe-hide').hide();
-                $('.subscribe-message').html('<i class="fa fa-check contact-success"></i><div>Thank you! You have been subscribed.<div>').fadeIn();
+                $('.subscribe-message').html('<i class="fa fa-check contact-success"></i><div>Thank you! You have been subscribed.</div>').fadeIn();
             },
             error: function (data) {
                 $('.subscribe-hide').hide();
-                $('.subscribe-message').html('<i class="fa fa-exclamation contact-error"></i><div>Something went wrong, please try again later.<div>').fadeIn();
+                $('.subscribe-message').html('<i class="fa fa-exclamation contact-error"></i><div>Something went wrong, please try again later.</div>').fadeIn();
             }
 
         }) //end ajax call
@@ -185,18 +179,16 @@ jQuery(document).ready(function($) {
             return false;
         }
 
-        var data_string = $('.contact-form').serialize();
+        var data_string = $('#contact-form').serialize();
 
         $('#contact-submit').hide();
         $('#contact-loading').fadeIn();
         $('.contact-error-field').fadeOut();
 
-        $.ajax({
-            type: "POST",
-            url: "php/contact.php",
+        myJsRoutes.controllers.Application.contact().ajax({
             data: data_string,
-
             //success
+            
             success: function (data) {
 
                 $('.contact-box-hide').slideUp();
